@@ -60,3 +60,4 @@ git push origin nome-feature
 ## Licenza
 
 Questo progetto è rilasciato sotto licenza MIT.
+# KALOS
