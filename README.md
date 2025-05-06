@@ -3,7 +3,7 @@
 
 ```bash
 # Clona il repository
-git clone [URL_REPOSITORY]
+git clone https://github.com/vasile20022/KALOS
 
 # Naviga nella directory del progetto
 cd kalos
