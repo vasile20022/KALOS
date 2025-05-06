@@ -39,6 +39,7 @@ Il sistema mira a digitalizzare e ottimizzare il flusso di lavoro dei profession
 - Registrazione e autenticazione degli utenti
 - Profili differenziati per fisioterapisti/coach
 - Gestione delle relazioni coach-paziente
+- possibilitia di avere il tema dark o light
 
 ## Tecnologie Utilizzate
 
