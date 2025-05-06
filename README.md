@@ -44,10 +44,10 @@ Se non hai mai installato Node.js prima, segui queste istruzioni per iniziare:
 
 ```bash
 # Clona il repository
-git clone https://github.com/vasile20022/KALOS
+git clone [URL_REPOSITORY] -> in questo caso : https://github.com/vasile20022/KALOS
 
 # Naviga nella directory del progetto
-cd kalos
+cd [NOME_DIRECTORY]
 
 # Installa le dipendenze
 npm install
