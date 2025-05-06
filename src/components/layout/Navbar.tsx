@@ -1,3 +1,4 @@
+
 /**
  * Componente Navbar
  * 
@@ -14,10 +15,13 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import ThemeToggle from "./ThemeToggle";
 import Sidebar from "./Sidebar";
+
 interface NavbarProps {
   onToggleSidebar?: () => void;
 }
+
 export default function Navbar({
   onToggleSidebar
 }: NavbarProps) {
@@ -27,18 +31,22 @@ export default function Navbar({
   } = useAuth();
   const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
   const handleLogout = async () => {
     await signOut();
     navigate("/login");
   };
+
   const getInitials = (name: string) => {
     return name.split(" ").map(n => n[0]).join("").toUpperCase();
   };
+
   const handleToggleSidebar = () => {
     if (onToggleSidebar) {
       onToggleSidebar();
     }
   };
+
   return <header className="fixed top-0 left-0 right-0 h-12 xs:h-14 sm:h-16 bg-background z-40 border-b flex items-center px-4 gap-3">
       {/* Mobile menu trigger */}
       <div className="md:hidden">
@@ -64,6 +72,9 @@ export default function Navbar({
       </div>
 
       <div className="flex-1"></div>
+
+      {/* Theme Toggle */}
+      <ThemeToggle />
 
       {/* Notifications */}
       <DropdownMenu>
